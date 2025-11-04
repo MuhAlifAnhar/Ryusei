@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ryusei Cosplay Community</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- AOS Animation -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #0b0b0d;
+        color: #fff;
+        scroll-behavior: smooth;
+      }
+
+      /* Navbar */
+      .navbar {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      .navbar-brand {
+        font-weight: 700;
+        color: #fff !important;
+        letter-spacing: 2px;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: url("https://images.unsplash.com/photo-1599495974783-481652bdab31?auto=format&fit=crop&w=1500&q=80")
+          no-repeat center center/cover;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        text-align: center;
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        color: #fff;
+        animation: fadeInUp 1.5s ease;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        color: #f1f1f1;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* About Section */
+      #about {
+        background-color: #111;
+        padding: 80px 0;
+      }
+
+      /* Gallery */
+      #gallery img {
+        border-radius: 10px;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+      }
+
+      #gallery img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
+      }
+
+      /* Join Section */
+      #join {
+        background: linear-gradient(45deg, #ff0080, #7928ca);
+        padding: 100px 0;
+        text-align: center;
+      }
+
+      #join h2 {
+        color: #fff;
+        margin-bottom: 20px;
+      }
+
+      #join p {
+        color: #f5f5f5;
+        margin-bottom: 30px;
+      }
+
+      .btn-join {
+        background-color: #fff;
+        color: #7928ca;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+
+      .btn-join:hover {
+        background-color: #7928ca;
+        color: #fff;
+        transform: scale(1.05);
+      }
+
+      /* Footer */
+      footer {
+        background-color: #0a0a0a;
+        text-align: center;
+        padding: 20px 0;
+        color: #aaa;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">RYUSEI</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Galeri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#join">Gabung</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content" data-aos="fade-up">
+        <h1>Ryusei Cosplay Community</h1>
+        <p>
+          Tempat berkumpulnya para cosplayer, kreator, dan pecinta budaya
+          Jepang.
+        </p>
+        <a href="#join" class="btn btn-light mt-3">Gabung Sekarang</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" data-aos="fade-up">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4 text-gradient">Tentang Ryusei</h2>
+        <p class="lead">
+          Ryusei adalah komunitas cosplay yang berbasis di Makassar, tempat para
+          wibu, cosplayer, dan seniman berbagi passion mereka terhadap dunia
+          Jepang. Kami rutin mengadakan gathering, photoshoot, dan event
+          jejepangan bersama.
+        </p>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="py-5 bg-dark">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5" data-aos="fade-up">
+          Galeri Event
+        </h2>
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="zoom-in">
+            <img
+              src="https://images.unsplash.com/photo-1606112219348-204d7d8b94ee?auto=format&fit=crop&w=800&q=80"
+              class="img-fluid"
+              alt="Cosplay 1"
+            />
+          </div>
+          <div class="col-md-4" data-aos="zoom-in">
+            <img
+              src="https://images.unsplash.com/photo-1602526217795-2b285d09d2e3?auto=format&fit=crop&w=800&q=80"
+              class="img-fluid"
+              alt="Cosplay 2"
+            />
+          </div>
+          <div class="col-md-4" data-aos="zoom-in">
+            <img
+              src="https://images.unsplash.com/photo-1598791316849-5e5f0596aa33?auto=format&fit=crop&w=800&q=80"
+              class="img-fluid"
+              alt="Cosplay 3"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Join -->
+    <section id="join" data-aos="fade-up">
+      <div class="container">
+        <h2>Bergabung dengan Ryusei!</h2>
+        <p>
+          Gabung bersama kami dan rasakan pengalaman menjadi bagian dari
+          komunitas cosplay paling seru di Makassar.
+        </p>
+        <a href="#" class="btn btn-join btn-lg">Gabung Sekarang</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        © 2025 Ryusei Cosplay Community | Designed with 💜 by Muh. Alif Anhar
+      </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+  </body>
+</html>
